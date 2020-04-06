@@ -16,6 +16,17 @@
 		E5E5A0C6242A0F66004E7ECC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E5A0C5242A0F66004E7ECC /* main.m */; };
 		E5E5A0D0242A0F66004E7ECC /* Fruit_CatcherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E5A0CF242A0F66004E7ECC /* Fruit_CatcherTests.m */; };
 		E5E5A0DB242A0F66004E7ECC /* Fruit_CatcherUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E5A0DA242A0F66004E7ECC /* Fruit_CatcherUITests.m */; };
+		E5E5A0F3242B093A004E7ECC /* bomb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E5E5A0EA242B093A004E7ECC /* bomb.jpg */; };
+		E5E5A0F4242B093A004E7ECC /* orange.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E5E5A0EB242B093A004E7ECC /* orange.jpg */; };
+		E5E5A0F5242B093A004E7ECC /* pineapple.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E5E5A0EC242B093A004E7ECC /* pineapple.jpg */; };
+		E5E5A0F6242B093A004E7ECC /* basket.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E5E5A0ED242B093A004E7ECC /* basket.jpg */; };
+		E5E5A0F7242B093A004E7ECC /* lemon.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E5E5A0EE242B093A004E7ECC /* lemon.jpeg */; };
+		E5E5A0F8242B093A004E7ECC /* forestbackground.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E5E5A0EF242B093A004E7ECC /* forestbackground.jpeg */; };
+		E5E5A0F9242B093A004E7ECC /* missile.png in Resources */ = {isa = PBXBuildFile; fileRef = E5E5A0F0242B093A004E7ECC /* missile.png */; };
+		E5E5A0FA242B093A004E7ECC /* strawberry.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E5E5A0F1242B093A004E7ECC /* strawberry.jpg */; };
+		E5E5A0FB242B093A004E7ECC /* banana.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E5E5A0F2242B093A004E7ECC /* banana.jpg */; };
+		E5E5A0FD242B0A35004E7ECC /* Jelly Crazies.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5E5A0FC242B0A35004E7ECC /* Jelly Crazies.ttf */; };
+		E5E5A100242B0D0B004E7ECC /* GameCode.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E5A0FF242B0D0B004E7ECC /* GameCode.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +64,18 @@
 		E5E5A0D6242A0F66004E7ECC /* Fruit CatcherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fruit CatcherUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5E5A0DA242A0F66004E7ECC /* Fruit_CatcherUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Fruit_CatcherUITests.m; sourceTree = "<group>"; };
 		E5E5A0DC242A0F66004E7ECC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5E5A0EA242B093A004E7ECC /* bomb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bomb.jpg; sourceTree = "<group>"; };
+		E5E5A0EB242B093A004E7ECC /* orange.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = orange.jpg; sourceTree = "<group>"; };
+		E5E5A0EC242B093A004E7ECC /* pineapple.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pineapple.jpg; sourceTree = "<group>"; };
+		E5E5A0ED242B093A004E7ECC /* basket.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = basket.jpg; sourceTree = "<group>"; };
+		E5E5A0EE242B093A004E7ECC /* lemon.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lemon.jpeg; sourceTree = "<group>"; };
+		E5E5A0EF242B093A004E7ECC /* forestbackground.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = forestbackground.jpeg; sourceTree = "<group>"; };
+		E5E5A0F0242B093A004E7ECC /* missile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = missile.png; sourceTree = "<group>"; };
+		E5E5A0F1242B093A004E7ECC /* strawberry.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = strawberry.jpg; sourceTree = "<group>"; };
+		E5E5A0F2242B093A004E7ECC /* banana.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = banana.jpg; sourceTree = "<group>"; };
+		E5E5A0FC242B0A35004E7ECC /* Jelly Crazies.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jelly Crazies.ttf"; sourceTree = "<group>"; };
+		E5E5A0FE242B0D0B004E7ECC /* GameCode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameCode.h; sourceTree = "<group>"; };
+		E5E5A0FF242B0D0B004E7ECC /* GameCode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameCode.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,15 +126,17 @@
 		E5E5A0B2242A0F62004E7ECC /* Fruit Catcher */ = {
 			isa = PBXGroup;
 			children = (
+				E5E5A0E9242A14BD004E7ECC /* Supporting Files */,
 				E5E5A0B3242A0F62004E7ECC /* AppDelegate.h */,
 				E5E5A0B4242A0F62004E7ECC /* AppDelegate.m */,
 				E5E5A0B6242A0F62004E7ECC /* ViewController.h */,
 				E5E5A0B7242A0F62004E7ECC /* ViewController.m */,
 				E5E5A0B9242A0F62004E7ECC /* Main.storyboard */,
+				E5E5A0FE242B0D0B004E7ECC /* GameCode.h */,
+				E5E5A0FF242B0D0B004E7ECC /* GameCode.m */,
 				E5E5A0BF242A0F66004E7ECC /* Assets.xcassets */,
 				E5E5A0C1242A0F66004E7ECC /* LaunchScreen.storyboard */,
 				E5E5A0C4242A0F66004E7ECC /* Info.plist */,
-				E5E5A0C5242A0F66004E7ECC /* main.m */,
 				E5E5A0BC242A0F62004E7ECC /* Fruit_Catcher.xcdatamodeld */,
 			);
 			path = "Fruit Catcher";
@@ -133,6 +158,24 @@
 				E5E5A0DC242A0F66004E7ECC /* Info.plist */,
 			);
 			path = "Fruit CatcherUITests";
+			sourceTree = "<group>";
+		};
+		E5E5A0E9242A14BD004E7ECC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E5E5A0C5242A0F66004E7ECC /* main.m */,
+				E5E5A0FC242B0A35004E7ECC /* Jelly Crazies.ttf */,
+				E5E5A0F2242B093A004E7ECC /* banana.jpg */,
+				E5E5A0ED242B093A004E7ECC /* basket.jpg */,
+				E5E5A0EA242B093A004E7ECC /* bomb.jpg */,
+				E5E5A0EF242B093A004E7ECC /* forestbackground.jpeg */,
+				E5E5A0EE242B093A004E7ECC /* lemon.jpeg */,
+				E5E5A0F0242B093A004E7ECC /* missile.png */,
+				E5E5A0EB242B093A004E7ECC /* orange.jpg */,
+				E5E5A0EC242B093A004E7ECC /* pineapple.jpg */,
+				E5E5A0F1242B093A004E7ECC /* strawberry.jpg */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,9 +281,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5E5A0F6242B093A004E7ECC /* basket.jpg in Resources */,
+				E5E5A0F7242B093A004E7ECC /* lemon.jpeg in Resources */,
+				E5E5A0F8242B093A004E7ECC /* forestbackground.jpeg in Resources */,
 				E5E5A0C3242A0F66004E7ECC /* LaunchScreen.storyboard in Resources */,
 				E5E5A0C0242A0F66004E7ECC /* Assets.xcassets in Resources */,
+				E5E5A0F5242B093A004E7ECC /* pineapple.jpg in Resources */,
+				E5E5A0F9242B093A004E7ECC /* missile.png in Resources */,
 				E5E5A0BB242A0F62004E7ECC /* Main.storyboard in Resources */,
+				E5E5A0F4242B093A004E7ECC /* orange.jpg in Resources */,
+				E5E5A0FA242B093A004E7ECC /* strawberry.jpg in Resources */,
+				E5E5A0FB242B093A004E7ECC /* banana.jpg in Resources */,
+				E5E5A0FD242B0A35004E7ECC /* Jelly Crazies.ttf in Resources */,
+				E5E5A0F3242B093A004E7ECC /* bomb.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5E5A0BE242A0F62004E7ECC /* Fruit_Catcher.xcdatamodeld in Sources */,
+				E5E5A100242B0D0B004E7ECC /* GameCode.m in Sources */,
 				E5E5A0B8242A0F62004E7ECC /* ViewController.m in Sources */,
 				E5E5A0C6242A0F66004E7ECC /* main.m in Sources */,
 				E5E5A0B5242A0F62004E7ECC /* AppDelegate.m in Sources */,
@@ -441,6 +495,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Fruit Catcher/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,6 +512,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Fruit Catcher/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

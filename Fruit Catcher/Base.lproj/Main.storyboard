@@ -1,24 +1,220 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Game Code-->
+        <scene sceneID="2We-zT-jtf">
+            <objects>
+                <viewController id="wcy-h0-gCB" customClass="GameCode" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1BY-So-qTn">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="forestbackground.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="IZf-86-RZa">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LIVES LEFT: 10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzb-Qs-FTE">
+                                <rect key="frame" x="466" y="0.0" width="165" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YOQ-gq-to3">
+                                <rect key="frame" x="63" y="0.0" width="66" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CATCH AS MANY AS YOU CAN WITHOUT LOSING ALL 10 LIVES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wo9-d3-FCO">
+                                <rect key="frame" x="156" y="58" width="355" height="134"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="missile.png" translatesAutoresizingMaskIntoConstraints="NO" id="kI8-bC-Vc5">
+                                <rect key="frame" x="0.0" y="351" width="667" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="basket.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="xh1-1W-lNl">
+                                <rect key="frame" x="284" y="297" width="98" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pineapple.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="bSV-2u-Ayc">
+                                <rect key="frame" x="70" y="111" width="53" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="banana.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="5bu-nt-3EG">
+                                <rect key="frame" x="131" y="88" width="63" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="orange.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="mRl-oy-qhK">
+                                <rect key="frame" x="229" y="135" width="53" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lemon.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="Y6s-R4-x9v">
+                                <rect key="frame" x="329" y="76" width="47" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="strawberry.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ZZZ-Fo-TCv">
+                                <rect key="frame" x="397" y="127" width="54" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="banana.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="SMF-cU-Jwm">
+                                <rect key="frame" x="546" y="145" width="57" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pineapple.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="NEi-5H-iGE">
+                                <rect key="frame" x="485" y="97" width="53" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GAME OVER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oYy-zj-XXg">
+                                <rect key="frame" x="275" y="46" width="117" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="drw-cY-hgL">
+                                <rect key="frame" x="291" y="243" width="85" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                <state key="normal" title="RESTART">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="modal" id="UC0-5s-GdA"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AvF-iZ-lo3">
+                                <rect key="frame" x="0.0" y="0.0" width="22" height="355"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r1T-Zi-JcB">
+                                <rect key="frame" x="645" y="0.0" width="22" height="355"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Lil-BO-Uq7"/>
+                    </view>
+                    <size key="freeformSize" width="667" height="375"/>
+                    <connections>
+                        <outlet property="Basket" destination="xh1-1W-lNl" id="vYc-n8-r3g"/>
+                        <outlet property="BorderMoveLeft" destination="AvF-iZ-lo3" id="ka7-el-Uqq"/>
+                        <outlet property="BorderMoveRight" destination="r1T-Zi-JcB" id="6Wr-48-x1D"/>
+                        <outlet property="Fruit1" destination="bSV-2u-Ayc" id="jAC-Lv-XuM"/>
+                        <outlet property="Fruit2" destination="5bu-nt-3EG" id="aE2-bv-bGK"/>
+                        <outlet property="Fruit3" destination="mRl-oy-qhK" id="6ef-dC-TlG"/>
+                        <outlet property="Fruit4" destination="Y6s-R4-x9v" id="Gvj-YQ-Yhw"/>
+                        <outlet property="Fruit5" destination="ZZZ-Fo-TCv" id="4hZ-g5-Uv9"/>
+                        <outlet property="Fruit6" destination="NEi-5H-iGE" id="chM-JN-ikH"/>
+                        <outlet property="Fruit7" destination="SMF-cU-Jwm" id="2dd-hO-Y0Y"/>
+                        <outlet property="GameOverButton" destination="drw-cY-hgL" id="v8i-3O-SnP"/>
+                        <outlet property="GameOverLabel" destination="oYy-zj-XXg" id="eTh-aH-JvS"/>
+                        <outlet property="Goal" destination="wo9-d3-FCO" id="0Ie-5Y-1OW"/>
+                        <outlet property="Ground" destination="kI8-bC-Vc5" id="wFX-NJ-UKr"/>
+                        <outlet property="LivesLeft" destination="hzb-Qs-FTE" id="Mu0-JV-6gg"/>
+                        <outlet property="Scoring" destination="YOQ-gq-to3" id="L2V-bA-Itx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qdA-ys-Wsw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1334" y="27"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="forestbackground.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="oby-XW-KdZ">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FRUIT CATCHER" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TmD-8q-kkc">
+                                <rect key="frame" x="243" y="50" width="180" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                <color key="textColor" red="0.73101712605035196" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NXy-tq-Cye">
+                                <rect key="frame" x="275" y="294" width="117" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="START GAME">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wcy-h0-gCB" kind="modal" id="eBN-5T-2ML"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pineapple.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Wfs-dZ-CyH">
+                                <rect key="frame" x="60" y="77" width="53" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="banana.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="8sM-Cm-O7D">
+                                <rect key="frame" x="167" y="116" width="54" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="orange.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="GXe-vk-10w">
+                                <rect key="frame" x="306" y="122" width="54" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lemon.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="OZf-SG-n7g">
+                                <rect key="frame" x="557" y="77" width="44" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HE3-rk-5ba">
+                                <rect key="frame" x="0.0" y="350" width="667" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="strawberry.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="rKN-nX-Efz">
+                                <rect key="frame" x="450" y="116" width="54" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="667" height="375"/>
+                    <connections>
+                        <outlet property="BottomBorder" destination="HE3-rk-5ba" id="aTH-s8-CyH"/>
+                        <outlet property="Fruit1" destination="Wfs-dZ-CyH" id="VHn-q6-noo"/>
+                        <outlet property="Fruit2" destination="8sM-Cm-O7D" id="qhD-Bd-wGW"/>
+                        <outlet property="Fruit3" destination="GXe-vk-10w" id="deY-wD-KBf"/>
+                        <outlet property="Fruit4" destination="rKN-nX-Efz" id="BCZ-Rp-7Qz"/>
+                        <outlet property="Fruit5" destination="OZf-SG-n7g" id="MKg-9U-iu5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="27.436281859070466"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="banana.jpg" width="389" height="280"/>
+        <image name="basket.jpg" width="900" height="900"/>
+        <image name="forestbackground.jpeg" width="4000" height="2598"/>
+        <image name="lemon.jpeg" width="198" height="255"/>
+        <image name="missile.png" width="1000" height="541"/>
+        <image name="orange.jpg" width="1300" height="1300"/>
+        <image name="pineapple.jpg" width="300" height="300"/>
+        <image name="strawberry.jpg" width="1600" height="1425"/>
+    </resources>
 </document>
